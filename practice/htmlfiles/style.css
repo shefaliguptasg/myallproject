@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: grid;
+    height: 500px;
+    background-color: red;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 1fr 50px;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.item {
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: black;
+}

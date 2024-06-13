@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <title>Kotak</title>
+    <meta name="description" content="Kotak">
+    <meta name="author" content="Kotak">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" type="text/css" media="all" />
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="css/icheck-material.min.css" rel="stylesheet">
+
+
+    <!-- <link rel="stylesheet" href="css/nav.css"> -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+
+</head>
+
+<body class="myfamily-5">
+    
+
+    <section id="center-area">
+        <div class="common-container centaer-box">
+            <div class="left-nav float-left">
+
+            </div>
+            <div class="middle-box float-right">
+                <div id="steps-box">
+                    <ol class="progress">
+                        <li class="is-complete" data-step="1"></li>
+                        <li class="is-complete" data-step="2"></li>
+                        <li class="is-complete" data-step="3"></li>
+                        <li class="is-complete" data-step="4"></li>
+                        <li class="is-active" data-step="5"></li>
+                        <li data-step="6" class="progress__last"></li>
+                    </ol>
+
+
+                </div>
+
+                <div id="payment-container" class="start-section1 remove-height ipad-height">
+                    <div class="quote-id">Quote Id: QM20456873495</div>
+
+
+                    <div class="innerpagetitle mb-4">
+                        <h2>Payment</h2>
+                    </div>
+
+                    <div class="p-4 sky-blue-background premium">
+                        <div class="row">
+                            <div class="col-md-6 col-xs-6">
+                                <p class="bold-txt mb-1 fs-18 mb-0">Premium</p>
+                                <p class="mb-1 fs-14 premium_years"></p>
+                            </div>
+                            <div class="col-md-6 col-xs-6">
+                                <p class="mb-1 fs-24 text-right blue-color3 mb-0"><span class="rs">`</span>10,000</p>
+                                <p class="mb-1 fs-14 text-right">Incl. of all taxes</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 blue-background2 premium">
+                        <div class="row mb-3">
+                            <div class="col-md-6 col-xs-6">
+                                <p class=" mb-1  fs-14">Cover amount</p>
+                            </div>
+                            <div class="col-md-6 col-xs-6">
+                                <p class="mb-1 text-right bold-txt fs-14"><span class="rs">`</span>15,00,000</p>
+                            </div>
+                        </div>
+
+                         <div class="row">
+                            <div class="col-md-6 col-xs-6">
+                                <p class=" mb-1  fs-14">Members covered</p>
+                            </div>
+                            <div class="col-md-6 col-xs-6">
+                                <p class="mb-1 text-right fs-14 insured_qty"></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div id="account-tabs">
+                        <h2 class="bold-txt fs-18">Select Payment Mode</h2>
+
+
+                        <ul class="nav nav-tabs mt-4" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Account</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Credit Card</a>
+                            </li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active mt-4" id="tabs-1" role="tabpanel">
+                                <div class="icheck-material-blue account-holder">
+                                    <input type="radio" id="Account1" name="Account1">
+                                    <label for="Account1">
+                                        <div class="row">
+                                            <div class="col-md-9 col-xs-6">
+                                                <div class="account-number">xxxx7865</div>
+                                                <p class="fs-12 light-grey mb-0">Account Number</p>
+                                             </div>
+                                            <div class="col-md-3 col-xs-6">
+                                                <div class="amount-number text-right"><span class="rs">`</span>56,750</div>
+                                                <p class="fs-12 text-right light-grey mb-0">Withdrawable Balance</p>
+                                             </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <hr>
+
+                                <div class="icheck-material-blue account-holder">
+                                    <input type="radio" id="Account2" name="Account1">
+                                    <label for="Account2">
+<div class="row">
+<div class="col-md-9 col-xs-6">
+<div class="account-number">xxxx7865</div>
+<p class="fs-12 light-grey mb-0">Account Number</p>
+</div>
+<div class="col-md-3 col-xs-6">
+<div class="amount-number text-right"><span class="rs">`</span>56,750</div>
+<p class="fs-12 text-right light-grey mb-0">Withdrawable Balance</p>
+</div>
+</div>
+</label>
+                                </div>
+
+                                <hr>
+
+                                <div class="agree mt-4">
+                                    <div class="icheck-material-blue">
+                                        <input type="checkbox" id="term">
+                                        <label for="term" class="fs-14 reg-txt light-grey">I agree to the <a href="tnc.html" class="blue-color3">Term & conditions</a></label>
+                                    </div>
+                                </div>
+
+                                <div class="agree">
+                                    <div class="icheck-material-blue">
+                                        <input type="checkbox" id="renew">
+                                        <label for="renew" class="fs-14 reg-txt light-grey">I allow the bank to renew my policy by debiting the installment amount from my Account/Credit Card.</label>
+                                    </div>
+                                </div>
+
+                                <p class="fs-14 light-grey mt-3 mb-0"><span class="bold-txt black-color">Note:</span> </p>
+                                <p class="fs-14 light-grey mt-1">Policy will be issued on successful submission of required dedails.</p>
+
+                            </div>
+
+                            <div class="tab-pane  mt-4" id="tabs-2" role="tabpanel">
+                                <div class="icheck-material-blue account-holder">
+                                    <input type="radio" id="Credit1" name="Credit1">
+                                    <label for="Credit1">
+<div class="row">
+<div class="col-md-9 col-xs-6">
+<div class="account-number">xxxx1235</div>
+<p class="fs-12 light-grey mb-0">Account Number</p>
+</div>
+<div class="col-md-3 col-xs-6">
+<div class="amount-number text-right"><span class="rs">`</span>86,750</div>
+<p class="fs-12 text-right light-grey mb-0">Withdrawable Balance</p>
+</div>
+</div>
+</label>
+                                </div>
+
+                                <hr>
+
+                                <div class="icheck-material-blue account-holder">
+                                    <input type="radio" id="Credit2" name="Credit1">
+                                    <label for="Credit2">
+<div class="row">
+<div class="col-md-9 col-xs-6">
+<div class="account-number">xxxx9876</div>
+<p class="fs-12 light-grey mb-0">Account Number</p>
+</div>
+<div class="col-md-3 col-xs-6">
+<div class="amount-number text-right"><span class="rs">`</span>96,750</div>
+<p class="fs-12 text-right light-grey mb-0">Withdrawable Balance</p>
+</div>
+</div>
+</label>
+                                </div>
+
+                                <hr>
+
+                                <div class="agree mt-4">
+                                    <div class="icheck-material-blue">
+                                        <input type="checkbox" id="credit-term">
+                                        <label for="term" class="fs-14 reg-txt light-grey">I agree to the</label> <a href="tnc.html" class="blue-color3"> Term & conditions</a>
+                                    </div>
+                                </div>
+
+                                <div class="agree">
+                                    <div class="icheck-material-blue">
+                                        <input type="checkbox" id="credit-renew">
+                                        <label for="renew" class="fs-14 reg-txt light-grey">I allow the bank to renew my policy by debiting the installment amount from my Account/Credit Card.</label>
+                                    </div>
+                                </div>
+
+                                <p class="fs-14 light-grey mt-3"><span class="bold-txt black-color">Note:</span> Policy will be issued on successful submission of required dedails.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="bottom-container">
+                <div class="bottom-right float-right">
+                    <a href="myfamily-4.html" class="common-cta back-cta">Back</a> <a class="common-cta red-background float-right" href="myfamily-6.html">Continue</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Gem jQuery -->
+    <script src="js/main.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <script>
+        $('input').click(function() {
+            $('input:not(:checked)').parent().removeClass("active-input");
+            $('input:checked').parent().addClass("active-input");
+        });
+
+
+        /* $('input:radio').click(function(){
+                         if($(this).is(":checked")) {
+                             $(this).parent().find('.amount-check').addClass('RedText');
+                        } else if($(this).is(":checked")) {
+                             $(this).parent().find('.amount-check').removeClass('RedText');
+                        }
+                    });*/
+    </script>
+
+</body>
+
+</html>

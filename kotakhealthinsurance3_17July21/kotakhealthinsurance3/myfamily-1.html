@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <title>Kotak</title>
+    <meta name="description" content="Kotak">
+    <meta name="author" content="Kotak">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" type="text/css" media="all" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="css/nav.css"> -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+
+</head>
+
+<body class="insurance-step-1">
+    
+  
+    <section id="center-area">
+        <div class="common-container centaer-box">
+            <div class="left-nav float-left">
+
+            </div>
+            <div class="middle-box float-right">
+                <div id="steps-box">
+                    <ol class="progress">
+                        <li class="" data-step="1"></li>
+                        <!--is-complete-->
+                        <li class="" data-step="2"></li>
+                        <!--is-active-->
+                        <li data-step="3"></li>
+                        <li data-step="4"></li>
+                        <li data-step="5"></li>
+                        <li data-step="6" class="progress__last"></li>
+                    </ol>
+
+
+                </div>
+
+                <div id="screen1" class="start-section1 text-center  remove-height">
+
+                    <div id="insure-slider" class="mobile-show">
+                        <div class="blue-background p-3">
+                            <!-- Swiper -->
+                            <div class="swiper-container insure-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <p class="fs-24 bold-txt">Easy buying</p>
+                                        <p class="pd-l-r15">Secure your & family's health in just a few clicks. Get start now!</p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <p class="fs-24 bold-txt">Easy buying</p>
+                                        <p class="pd-l-r15">Secure your & family's health in just a few clicks. Get start now!</p>
+                                    </div>
+                                </div>
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="innerpagetitle">
+                        <h2>Who would you like to insure?</h2>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col-md-4 col-xs-6 offset-md-2">
+                            <a href="javascript:void(0)" class="start-box myself-btn">
+                                <div class="start-img"><img src="images/myself-icon.jpg" alt="" /></div>
+                                <h2>Myself</h2>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-xs-6">
+                            <a href="javascript:void(0)" class="start-box myfamily-btn">
+                                <div class="start-img"><img src="images/myfamily-icon.jpg" alt="" /></div>
+                                <h2>My Family</h2>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- <div id="myself-container">
+                        <div class="innerpagetitle">
+                            <h2>Select your age & City you stay</h2>
+                        </div>
+                        <form action="" method="post" autocomplete="off" id="myself-form">
+                            <div class="row mt-4">
+                                <div class="col-md-4 col-xs-6 offset-md-2">
+                                    <div class="form-group">
+                                        <div class="input-group date" id="myselfdate">
+                                            <input readonly name="myself_first_date" type="text" value="" placeholder="DD/MM/YYYY*" class="form-control" />
+                                            <div class="input-group-addon input-group-append">
+                                                <div class="input-group-text">
+                                                    <img src="images/date-icon.jpg" width="18" height="16" alt="" /> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="error first_birth_date">Please select your date of birth</span>
+                                     </div>
+                                <div class="col-md-4 col-xs-6"><input type="text" id="stay" class="form-control" name="myself_first_stay" placeholder="Your stay in*" />
+                                    <span class="error first_city">Please select your date of birth</span>
+                                </div>
+                            </div>
+                        </form>
+                    </div> -->
+
+                </div>
+
+            </div>
+
+
+            <div class="bottom-container">
+                <div class="bottom-right float-right">
+                    <a href="index.html" class="common-cta back-cta">Back</a> <a class="common-cta grey-background float-right continue-btn" href="javascript:void(0)">Continue</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Gem jQuery -->
+    <script src="js/main.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <script>
+        (function($) {
+            $(function() {
+                $('#myselfdate').datetimepicker({
+                    "allowInputToggle": true,
+                    "showClose": true,
+                    "showClear": true,
+                    "showTodayButton": true,
+                    "format": "DD/MM/YYYY",
+                    "ignoreReadonly": true,
+                    "maxDate": moment().subtract(18, 'years')
+                });
+
+            });
+        })(jQuery);
+    </script>
+
+
+    <script>
+        $("#myself-form").validate();
+   
+        $('a.start-box').on('click', function() {
+            $('a.start-box').removeClass('active-btn')
+            $(this).parent().find('a.start-box').addClass('active-btn');
+        });
+        /* 
+                $("a.myself-btn").click(function() {
+                    $('#myself-container').slideDown('fast');
+                    $('.continue-btn').addClass('red-background').attr("href", "myself-2.html");
+                    $('.start-section1').addClass('remove-height')
+                });
+                $("a.myfamily-btn").click(function() {
+                    $('#myself-container').slideUp('fast')
+                    $('.start-section1').removeClass('remove-height')
+                }); */
+
+
+
+
+        /*$('a.myself-btn').click(function() {
+            
+            if($('#myself-container').show())
+        	
+        	{
+            	alert("something is true");
+            }else{
+            	$('#myself-container').hide()
+            }
+        });*/
+
+
+        var swiper = new Swiper('.insure-slider', {
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+
+
+
+
+
+</body>
+
+</html>

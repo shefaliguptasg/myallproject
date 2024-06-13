@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: red;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.item {
+    background-color: white;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#all-conversion-sections {
+    background-color: red;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+#tmp {
+    display: flex;
+    background-color: aqua;
+}
+
+#wgt {
+    display: flex;
+    background-color: lightpink;
+}
+#dst{
+    display: flex;
+    background-color: lightsalmon;
+}

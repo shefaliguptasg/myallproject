@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <title>Kotak</title>
+    <meta name="description" content="Kotak">
+    <meta name="author" content="Kotak">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="css/icheck-material.min.css" rel="stylesheet">
+
+
+    <!-- <link rel="stylesheet" href="css/nav.css"> --> 
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+
+</head>
+
+<body class="myfamily-2">
+    
+
+    <section id="center-area">
+        <div class="common-container centaer-box">
+            <div class="left-nav float-left">
+
+            </div>
+            <div class="middle-box float-right">
+                <div id="steps-box">
+                    <ol class="progress">
+                        <li class="is-complete" data-step="1"></li>
+                        <!--is-complete-->
+                        <li class="is-active" data-step="2"></li>
+                        <!--is-active-->
+                        <li data-step="3"></li>
+                        <li data-step="4"></li>
+                        <li data-step="5"></li>
+                        <li data-step="6" class="progress__last"></li>
+                    </ol>
+
+
+                </div>
+
+                <div class="start-section1">
+                    <div class="quote-id">Quote Id: QM20456873495</div>
+
+                    <div id="form1">
+                        <form id="how-member">
+                            <div class="innerpagetitle mb-5">
+                                <h2>How many member would you like to get insured?</h2>
+                            </div>
+
+                            <div class="icheck-material-blue mb-4">
+                                <input type="checkbox" name="insured[]" value="Self" id="Self" checked="checked">
+                                <label for="Self">Self</label>
+                            </div>
+
+                            <div class="icheck-material-blue  mb-4">
+                                <input type="checkbox" name="insured[]" value="Spouse" id="Spouse">
+                                <label for="Spouse">Spouse</label>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="error myfamily-2">Self or Spouse should be selected</span>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <!-- <div class="row">
+                                <div class="col-md-2 col-xs-6 mobile-left-pd0">
+                                    <div class="icheck-material-blue">
+                                        <input type="checkbox" name="children" value="Children" id="Children">
+                                        <label for="Children">Children</label>
+                                    </div>
+                                </div>
+                                 
+                                <div class="col-12">
+                                    <span class="error myfamily-2-children">Minimum of 1 and Maximum of 3 childrens can be insured.</span>
+                                </div>
+                            </div> -->
+                            <div class="row row-sons">
+                                <div class="col-md-3 col-xs-6 mobile-left-pd0">
+                                    <div class="icheck-material-blue icheck-material-blue-sons">
+                                         <input type="checkbox"  name="children" value="Sons" id="Sons">
+                                         <label for="Sons" id="label_for_son">Dependent Son</label> 
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-xs-6">
+                                    <div class="increment  incrementSons  ">
+                                        <input type="button" onclick="decrementValue('numberboys')" class="less" value="-" disabled="disabled" />
+                                        <input readonly type="text" name="quantity" value="1" maxlength="2" max="10" size="1" id="numberboys"  />
+                                        <input type="button" onclick="incrementValue('numberboys')" class="add" value="+"  disabled="disabled"/>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <span class="error myfamily-2-children">Minimum of 1 and Maximum of 3 childrens can be insured.</span>
+                                </div>
+                            </div>
+                            <div class="row row-girls">
+                                <div class="col-md-3 col-xs-6 mobile-left-pd0">
+                                    <div class="icheck-material-blue icheck-material-blue-girls">
+                                        <input type="checkbox" name="children" value="Girls" id="Girls">
+                                        <label for="Girls" id="label_for_daughter">Dependent Daughter</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3  col-xs-6">
+                                    
+                                    <div class="increment incrementGirls ">
+                                        <input type="hidden" class="child_count">
+                                        <input type="button" onclick="decrementValue('numbergirls')" class="less" value="-"  disabled="disabled"/>
+                                        <input readonly type="text" name="quantity" value="1" maxlength="2" max="10" size="1" id="numbergirls"/>
+                                        <input type="button" onclick="incrementValue('numbergirls')" class="add" value="+"  disabled="disabled"/>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <span class="error myfamily-2-children">Minimum of 1 and Maximum of 3 childrens can be insured.</span>
+                                </div>
+                            </div>
+
+
+                            <!--<div class="handle-counter" id="handleCounter">
+  <button class="counter-minus btn btn-primary">-</button>
+  <input type="text" value="3">
+  <button class="counter-plus btn btn-primary">+</button>
+</div>-->
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="bottom-container">
+                <div class="bottom-right float-right">
+                    <a href="myfamily-1.html" class="common-cta back-cta">Back</a> <a class="common-cta red-background float-right cont" href="javascript:void(0)">Continue</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Gem jQuery -->
+    <script src="js/main.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <script type="text/javascript">
+      var total_value = 0
+        $(document).ready(function() {
+            // debugger
+            //  on page load nned to check this condition 
+           if($('input[id="Sons"]').prop('checked') ){
+             $(".incrementSons input[type=button]").removeAttr("disabled"); 
+           } 
+           if($('input[id="Girls"]').prop('checked')  ){
+            $(".incrementGirls input[type=button]").removeAttr("disabled");
+           }
+
+           if (document.getElementById('numbergirls') != null && document.getElementById('numbergirls').value === '3' ){
+            $('.row-sons').addClass("disabled");   
+           } 
+           if(document.getElementById('numbersons') != null && document.getElementById('numbersons').value === '3' ){
+            $('.row-girls').addClass("disabled");   
+           } 
+
+        //  --------------------------  
+            $('input[id="Sons"]').on('click', function(e) {
+                // $('.incrementSons').toggleClass("disabled")
+             if($(this).prop('checked') == false){
+                document.getElementById('numberboys').value = 0 ;
+                $(".incrementSons input[type=button]").attr("disabled", "disabled");
+                $('.row-girls').removeClass("disabled")
+              }else {
+                $(".incrementSons input[type=button]").removeAttr("disabled"); 
+                document.getElementById('numberboys').value = 1  ;
+              }
+            });     
+
+            $('input[id="Girls"]').on('click', function(e) {
+                // $('.incrementGirls').toggleClass("disabled")
+             if ($(this).prop('checked') == false){
+                document.getElementById('numbergirls').value = 0 ;
+                $(".incrementGirls input[type=button]").attr("disabled", "disabled");
+                $('.row-sons').removeClass("disabled")  
+              }else {
+                $(".incrementGirls input[type=button]").removeAttr("disabled");   
+                document.getElementById('numbergirls').value = 1  ;
+              }
+            }); 
+
+            // $("#Girls, #Sons").on('click', function(e) {
+            //     if (e.target.id == 'Sons' && $('input[id="Sons"]').prop('checked') == false) {
+            //         // debugger
+            //         $('#numberboys').val(0);
+            //     } else if (e.target.id == 'Girls' &&  $('input[id="Girls"]').prop('checked') == false) {
+            //         $('#numbergirls').val(0); 
+            //     }
+            //     // if (e.target.id == 'Sons' && $('input[id="Sons"]').prop('checked'))
+            //     $(this).closest(".col-md-3").next(".col-md-3").find(".increment").toggleClass("disabled");
+            // })
+        });
+        $(document).ready(function() {
+        if (localStorage.getItem('child_count') == undefined || localStorage.getItem('child_count') == null){
+            localStorage.setItem("child_count", 0)
+            total_value = 0
+          }else{
+            total_value  = parseInt(localStorage.getItem("child_count") )
+          }  
+        }); 
+        function incrementValue(ele) {
+            var b_count =  parseInt(document.getElementById('numberboys').value)
+            var g_count =  parseInt(document.getElementById('numbergirls').value)      
+            $('.error.myfamily-2-children').hide()
+            var total_value = (b_count + g_count)
+            if (total_value < 3 && b_count < 3 && g_count < 3){
+              
+            if (ele === 'numberboys'){
+                // var b_count = document.getElementById('numberboys').value
+                b_count ++
+                document.getElementById('numberboys').value = b_count; 
+            }else if(ele === 'numbergirls'){
+                // var local_count = document.getElementById('numbergirls').value
+                g_count ++
+                document.getElementById('numbergirls').value = g_count;
+            } 
+            // debugger
+            if (b_count == 3){
+                $('.row-girls').addClass("disabled")  
+            }
+            if (g_count == 3){
+                $('.row-sons').addClass("disabled")  
+            }
+
+
+            total_value ++ 
+            // document.getElementsByClassName('child_count')[0].value = total_value
+            }
+        }
+
+        function decrementValue(ele) {
+            $('.error.myfamily-2-children').hide()
+           var b_count =  parseInt(document.getElementById('numberboys').value)
+           var g_count =  parseInt(document.getElementById('numbergirls').value)      
+          var total_value = (b_count + g_count)
+        //   debugger
+            if (total_value > 0 ){
+            if (ele === 'numberboys'){
+                // var local_count = document.getElementById('numberboys').value
+                if( b_count > 0){
+                    b_count --
+                    document.getElementById('numberboys').value = b_count;   
+                    // document.getElementsByClassName('child_count')[0].value = total_value --
+                }
+            }else if(ele === 'numbergirls'){
+                // var local_count = document.getElementById('numbergirls').value
+                if( g_count > 0){
+                    g_count --
+                    document.getElementById('numbergirls').value = g_count; 
+                    // document.getElementsByClassName('child_count')[0].value = total_value --  
+                }
+            }
+            // debugger
+            if (b_count <= 2 ){
+                $('.row-girls').removeClass("disabled")  
+            }
+            if (g_count <= 2 ){
+                $('.row-sons').removeClass("disabled")  
+            }
+            }
+        }
+
+    //    $(document).on('click', '#label_for_son', function(){
+    //         // alert()
+    //         var ele = $(this).closest('.icheck-material-blue').find('input')
+    //         if(ele.attr('checked') === undefined){
+    //         }else{   
+    //             if (ele.attr('checked')) {
+    //                 // ele.attr('checked', 'checked');
+    //             } else {
+    //                 // ele.removeAttr('checked');
+    //             }
+    //         }
+    //    }) ;
+  
+    </script>
+
+</body>
+
+</html>
