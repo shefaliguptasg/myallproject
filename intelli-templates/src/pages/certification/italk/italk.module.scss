@@ -1,0 +1,160 @@
+// @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
+@import "../../../assets/styles/variable";
+.certification-italk {
+  position: relative;
+  width: inherit;
+  height: 95%;
+
+  .italk-container {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    display: inherit;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .img-holder {
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.certificate-italk-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .intelliswift-logo {
+    width: 240px;
+  }
+
+  .vertical-bar {
+    border: 0.5px solid $black;
+    height: 4.3rem;
+    margin: 0px 30px;
+  }
+
+  .italk-logo {
+    width: 120px;
+  }
+}
+
+.certificate-italk-main {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 4.5rem;
+  color: $black-shade-2;
+
+  .certificate-achivement {
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    #certification-text {
+      font-size: 4rem;
+      font-family: "Playfair Display", serif;
+      font-weight: 500;
+    }
+    #achivement-text {
+      font-size: 2rem;
+    }
+  }
+
+  .main-content {
+    position: relative;
+    margin-top: 4rem;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 550;
+
+    .certificate-person-name {
+      font-size: 2.685rem;
+      font-family: bold, "open-sans";
+      color: $black;
+      line-height: 0.875;
+    }
+
+    .certificate-person-name::after {
+      content: "";
+      border-bottom: 1px solid $black-shade-2;
+      width: 70%;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+    .certificate-session-name {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .certificate-session-name::after {
+      content: "";
+      border-bottom: 1px solid $black-shade-2;
+      width: 75%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.certificate-italk-footer {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 0px 10px;
+  margin-top: 4rem;
+  font-size: 20px;
+
+  .footer-left-content {
+    margin-top: 10px;
+    .left-content-date {
+      display: inline-block;
+    }
+    .left-content-date::after {
+      content: "";
+      border-bottom: 1px solid $black-shade-2;
+      width: 10em;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 5px;
+    }
+  }
+  .footer-right-content {
+    .right-content-sign {
+      position: relative;
+      img {
+        position: relative;
+        width: 100px;
+      }
+    }
+    .right-content-sign::after {
+      content: "";
+      border-bottom: 1px solid $black-shade-2;
+      width: 10em;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 5px;
+    }
+  }
+  .name-stamp {
+    font-size: 18px;
+    line-height: 1;
+  }
+}

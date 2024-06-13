@@ -1,0 +1,27 @@
+@import "../../../src/assets/styles/variable";
+
+.container {
+  width: 400px !important;
+  font-family: regular;
+}
+.form-Container {
+  padding-inline: 20px;
+  width: 100%;
+}
+
+.model-body {
+  text-align: left !important;
+}
+
+.toContainer {
+  display: flex;
+  gap: 8px;
+  & .input {
+    flex: 1;
+  }
+}
+.note {
+  color: $grey;
+  font-size: 12px;
+  margin-block: 10px;
+}

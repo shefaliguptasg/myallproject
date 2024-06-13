@@ -1,0 +1,215 @@
+@import "../../assets/styles/variable";
+.logo-container {
+  position: relative;
+  top: 3rem;
+  display: flex;
+  justify-content: center;
+  img,
+  div {
+    margin-right: 1rem;
+  }
+}
+
+#is-logo {
+  width: 160px;
+}
+
+/* Vertical Pipe between the two Logos */
+.vertical-pipe {
+  background-color: $white;
+  height: 3rem;
+  width: 0.1rem;
+}
+
+/* iTalk Logo */
+#italk-logo {
+  width: 80px;
+}
+
+/* Main Contents Container */
+
+.main-content {
+  padding: 40px;
+  font-size: 16px;
+  color: $black;
+  font-style: normal;
+  font-weight: 500;
+  background-color: $white;
+  max-width: 800px;
+  max-height: auto;
+}
+
+.pg-content-last {
+  margin-bottom: 0px;
+}
+
+/* Middle Block Container */
+
+.middle-block {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 220px;
+  max-height: 220px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Person Image */
+
+.person-image {
+  flex: 0.25;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+}
+
+/* Mid Block Two */
+
+.mid-block-two {
+  background-color: $black;
+  flex: 0.75;
+}
+
+/* Mid Block Text Container */
+
+.mid-block-text {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 15px;
+}
+
+.pg-block1 {
+  display: block;
+}
+
+.pg1 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: $red;
+}
+
+.presenter {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.pg2 {
+  color: $white;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.horizontal-bar {
+  position: relative;
+  height: 0.1rem;
+  width: calc(100% - 2px);
+  background: $white;
+  margin: 15px 0;
+}
+.pg3 {
+  color: $white;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.topic {
+  color: $white;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.date-time-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .calender {
+    display: flex;
+    gap: 8px;
+    color: $white;
+    font-size: 1rem;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+
+    .calender-logo {
+      width: 1.9rem;
+      height: 1.9rem;
+      margin-top: 1px;
+    }
+
+    .date {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+  }
+
+  .time {
+    display: flex;
+    gap: 8px;
+    color: $white;
+    font-size: 1rem;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+
+    .time-logo {
+      width: 1.9rem;
+      height: 1.9rem;
+      margin-top: 1px;
+    }
+
+    .time-value {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+  }
+}
+
+.eligibility {
+  display: flex;
+  color: $white;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  padding: 5px;
+}
+
+.black-background-text {
+  display: inline-block;
+  padding: 0.1rem 1.5rem;
+  background-color: $black;
+  color: $white;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem !important;
+}
+
+/* List Styles */
+
+ul {
+  line-height: 2.5rem;
+  margin-left: 2.2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+/* Inverted Triangle Bullets Styling */
+
+.bullet {
+  font-size: 1.2rem;
+  padding-right: 0.9rem;
+}
+
+.black-footer {
+  background-color: $black;
+  height: 1rem;
+}

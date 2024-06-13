@@ -1,0 +1,22 @@
+{
+  "Strapi": {
+    "STRAPI_DELIVERY_TOKEN": "",
+    "STRAPI_ENVIRONMENT": "develop",
+    "STRAPI_APIKEY": "ba0ed8b7a4a8597df7f68639e1accc07d73b735996240cff37db6b8feb63f29886dbaefb456703cab4aabffe1089c436ead1053beb6619abd42dbf87c1ae1ae634e153872f5fe45bd91b7ad951b53d9323510d017a8ced838d43c7f4ee97f354cd8c02bd5535362924a8e5eba11910bd465ec753637a55fe532bf8a217fc8f9d",
+    "STRAPI_REGION": "us",
+    "STRAPI_GQL_URL": "http://172.20.3.122:1337/graphql",
+    "STRAPI_BASE_URL": "http://172.20.3.122:1337"
+  },
+  "clientDetails": {
+    "intelli": {
+      "apiEndPoint": "",
+      "assetsBasePath": "",
+      "customerBasePath": "",
+      "tenantId": "5000",
+      "apiTenantName": "",
+      "locale": "en",
+      "env": "development",
+      "clientName": "completesavings"
+    }
+  }
+}

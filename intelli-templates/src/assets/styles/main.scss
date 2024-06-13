@@ -1,0 +1,64 @@
+// Common styles extracted
+
+.form-container {
+  overflow-y: auto;
+  padding: 10px;
+
+  .label {
+    span {
+      color: #fff !important;
+    }
+  }
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.input-group input {
+  width: 145px;
+}
+
+.red-placeholder::placeholder {
+  color: red;
+}
+
+.remove-icon {
+  cursor: pointer;
+  color: rgb(255, 0, 13);
+  &.disabled {
+    cursor: not-allowed;
+    color: gray;
+  }
+}
+
+.custom-btn-wrap {
+  font-size: 12px;
+  display: flex;
+  align-items: end;
+  cursor: pointer;
+  font-weight: 600;
+  color: rgb(255, 0, 13);
+}
+
+.formHolder {
+  padding: 10px 5px;
+  .label {
+    span {
+      color: #fff !important;
+    }
+  }
+}
+
+.topic-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.paragraph-gap {
+  margin-top: 1.2rem;
+}

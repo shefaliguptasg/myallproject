@@ -1,0 +1,27 @@
+@import "../../assets/styles/variable";
+@import "../../assets/styles/main.scss";
+
+.drop-time-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  .drop-wrap {
+    flex: 0.48;
+    ul {
+      margin: 0px !important;
+    }
+  }
+}
+
+.profile-title {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: $grey-shade-1;
+}
+
+.text-area {
+  width: 100%;
+}

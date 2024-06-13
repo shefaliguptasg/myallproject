@@ -1,0 +1,56 @@
+@import "../../assets/styles/variable";
+.logoContainer {
+  position: relative;
+  top: 4rem;
+  display: flex;
+  justify-content: center;
+  img,
+  div {
+    margin-right: 1rem;
+  }
+}
+
+.logo_image {
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Horizontal Color Bar */
+.Horizontal-bar {
+  height: 10px !important;
+}
+
+/* Main Contents Container */
+.main-content {
+  padding: 30px;
+  font-size: 20px;
+  color: $black;
+  font-style: normal;
+  font-weight: 100;
+  background-color: $white;
+  max-width: 800px;
+  max-height: auto;
+}
+
+/* List Styles */
+
+ul {
+  line-height: 1.5rem;
+  margin-top: 0rem;
+  margin-left: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+li {
+  list-style: disc;
+  padding-top: 0.1rem;
+  margin-left: 1.3rem;
+}
+
+.footer-section {
+  width: auto;
+  margin: auto;
+  background-color: $black;
+  height: 10rem;
+}

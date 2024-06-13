@@ -1,0 +1,45 @@
+@import "../../assets/styles/variable";
+
+.register-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 100px);
+}
+.registration-container {
+  box-sizing: border-box;
+  padding: 40px 20px;
+  border-radius: 8px;
+  background-color: $white;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  width: auto;
+}
+.dropdown {
+  border: 1px solid $white-shade-2;
+}
+.lableClass {
+  color: $white-shade-2 !important;
+}
+
+.submit-button {
+  background-color: $red-shade-4 !important;
+}
+.grid-conatiner {
+  padding-top: 1.25rem;
+}
+
+.signup-link {
+  color: $red-shade-4;
+}
+
+.login-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

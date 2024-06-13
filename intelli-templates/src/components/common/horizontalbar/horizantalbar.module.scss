@@ -1,0 +1,31 @@
+// Horizontal Color Strip
+@import "../../../assets/styles/variable";
+.color-box {
+  height: 10.58px;
+  display: flex;
+
+  #red-box {
+    width: 25.744%;
+    background: $red-shade-4;
+  }
+
+  #yellow-box {
+    width: 24.83%;
+    background: $mustard-shade-3;
+  }
+
+  #pink-box {
+    width: 22.086%;
+    background: $pink;
+  }
+
+  #blue-box {
+    width: 15.466%;
+    background: $blue-shade-1;
+  }
+
+  #green-box {
+    width: 15.39%;
+    background: $emerald;
+  }
+}

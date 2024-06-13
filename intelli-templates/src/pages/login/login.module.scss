@@ -1,0 +1,91 @@
+@import "../../assets/styles/variable";
+.login-main-page {
+  background: $white;
+  display: flex;
+}
+
+// Left Container
+.left-container {
+  width: 65vw;
+}
+.image-container {
+  display: flex;
+  position: relative;
+}
+
+.image-container img {
+  height: 100vh;
+  width: 100%;
+}
+.overlay-text {
+  position: absolute;
+  top: 95%;
+  left: 7%;
+  transform: translate(-50%, -50%);
+  color: $white;
+}
+
+//Right Container
+.right-container {
+  width: 35vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration-container {
+  box-sizing: border-box;
+  max-width: 350px;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown {
+  border: 1px solid $white;
+}
+
+.lableClass {
+  color: $white !important;
+}
+
+.forgot-password-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-button {
+  background-color: $black !important;
+}
+.grid-conatiner {
+  padding-top: 1rem;
+}
+
+.signup-link {
+  color: $blue;
+}
+
+.login-links {
+  margin-top: 15px;
+  display: flex;
+}
+
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  width: 35.05vw;
+  // right: 0rem;
+}
+
+.horizontal-bar {
+  height: 1.2rem;
+}

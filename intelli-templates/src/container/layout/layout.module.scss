@@ -1,0 +1,73 @@
+@import "../../../src/assets/styles/variable";
+
+.wrapper {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  &.show-background {
+    background-image: linear-gradient($red, $black-shade-3);
+  }
+}
+.main-page {
+  margin-left: 285px;
+}
+.canvas-wrap {
+  width: 800px;
+  margin: auto;
+  height: calc(100% - 1px);
+}
+
+.btn-container {
+  position: fixed;
+  right: 20px;
+  z-index: 10001;
+  cursor: pointer;
+  --button-margin: 50px; /* Adjust this value as needed */
+
+  /* Dynamic calculation of button positions */
+  @for $i from 1 through 9 {
+    &.btn#{$i} {
+      bottom: calc((10 - #{$i}) * var(--button-margin));
+    }
+  }
+}
+
+.ibuddy-container {
+  cursor: pointer;
+}
+
+.btn-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-position {
+  background-color: $white;
+  color: $red;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+  box-shadow: 0px 0px 0px 1px;
+}
+.round-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $red;
+  position: relative;
+  color: $white;
+  svg {
+    margin-top: 5px;
+    position: absolute;
+    top: 3px;
+    left: 8px;
+  }
+}
+
+.animate-btn {
+  display: inline-block !important;
+  flex-direction: unset !important;
+}

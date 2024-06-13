@@ -1,0 +1,118 @@
+@import "../../assets/styles/variable";
+@import "../../assets/styles/main.scss";
+
+.container {
+  width: 50rem;
+  margin: auto;
+  font-size: 19px;
+}
+
+// Header Container
+.header-container {
+  position: relative;
+}
+
+.header-background {
+  height: 45vh !important;
+  background-image: url("http://template.intelliswift.com:1337/uploads/Microsoft_Teams_image_13_0cca534e0f.png");
+  background-repeat: repeat-x;
+  background-position: 312px -15px;
+}
+
+.header-image-1 {
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+  background-repeat: repeat-x;
+}
+
+.header-image-2 {
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-vertical-bar {
+  width: 20.313rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  left: 2rem;
+}
+
+.header-yellow-icon {
+  color: $mustard-shade-2;
+  font-size: 50px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.header-text {
+  max-width: 15.85rem;
+  width: 100%;
+  height: auto;
+  color: $white;
+  text-align: center;
+}
+
+.text-quote {
+  font-size: 25px;
+  opacity: 0.9;
+}
+.text-author-name {
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+.header-red-icon {
+  color: $red-shade-4;
+  font-size: 50px;
+}
+
+// Main Content Container
+.main-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: $white-shade-1;
+}
+
+.main-left-container {
+  width: 22.61rem;
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-right-container {
+  max-width: 9.88rem;
+  margin-top: 3.3rem;
+  display: flex;
+  flex-direction: column;
+}
+.profile-image-container {
+  width: 100%;
+  height: 11.25rem;
+}
+
+.employee-name-designation-container {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  text-align: center;
+}
+
+.employee-name {
+  margin-top: 1.2rem;
+}
+
+// Footer
+.footer {
+  display: flex;
+  background-color: $black;
+  height: 9.25rem;
+  justify-content: center;
+  align-items: center;
+}

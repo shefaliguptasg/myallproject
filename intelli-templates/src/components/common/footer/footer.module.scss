@@ -1,0 +1,47 @@
+@import "../../../assets/styles/variable";
+
+.footer-section {
+  // width: 800px;
+  width: auto;
+  margin: auto;
+  background-color: $black;
+  height: 10rem;
+}
+.footer-main {
+  text-align: center;
+  padding: 43px 0px;
+  img {
+    width: 234px;
+    height: 62px;
+  }
+}
+
+.footer-container {
+  width: 100%;
+  background-color: $white;
+  display: flex;
+  gap: 255px;
+}
+
+.logo-container {
+  padding: 28px 36px;
+  cursor: pointer;
+}
+
+.logo-container {
+  img {
+    height: 50px;
+  }
+}
+
+.links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  .logo {
+    height: 35px;
+    color: $black;
+  }
+}

@@ -1,0 +1,28 @@
+@import "../../../src/assets/styles/variable";
+
+.formHolder {
+  padding: 10px 5px;
+  .label {
+    span {
+      color: $white !important;
+    }
+  }
+}
+
+.formHolder {
+  position: fixed;
+  top: 10px;
+  background-color: $black;
+  width: 100%;
+  max-width: 800px;
+  z-index: 10000;
+  border-radius: 70px;
+}
+.option-list {
+  width: 200px;
+  margin-left: 10px;
+  ul {
+    margin-left: 0px;
+    border-radius: 4px;
+  }
+}

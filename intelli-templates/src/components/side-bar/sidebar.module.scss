@@ -1,0 +1,141 @@
+@import "../../../src/assets/styles/variable";
+
+.side-bar-holder {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: $black;
+  z-index: 1000;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.menu-logo {
+  position: sticky;
+  top: 30.56px;
+  width: 223px;
+  left: 22px;
+  background-color: $black;
+  img {
+    max-width: 100%;
+  }
+}
+
+.formHolder {
+  padding: 10px 5px;
+  .label {
+    span {
+      color: $white !important;
+    }
+  }
+}
+
+/** -----------Menu List Css----------------**/
+
+.list-container {
+  width: 100%;
+
+  .list-holder {
+    padding: 10px 10px;
+    color: $white;
+    cursor: pointer;
+  }
+  .list-sub-menu {
+    padding: 10px 10px;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  .list-holder {
+    &.active {
+      background-color: $grey-shade-4;
+      color: $white;
+      position: relative;
+      svg {
+        path {
+          fill: $white;
+        }
+      }
+    }
+  }
+
+  .list-holder {
+    &:hover {
+      background-color: $black-shade-1;
+    }
+  }
+  .list-sub-menu {
+    padding-left: 54px;
+    &.active {
+      background-color: $grey-shade-4;
+      color: $white;
+      position: relative;
+    }
+  }
+}
+.list-sub-menu {
+  &:hover {
+    background-color: $black-shade-1;
+  }
+}
+
+.list-holder.active::before,
+.list-sub-menu.active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 100%;
+  background-color: $mustard-shade-1;
+
+  z-index: 1;
+}
+
+.fixed-menu {
+  padding-top: 70px;
+}
+
+.list-main {
+  display: flex;
+  align-items: center;
+  padding-left: 0.6rem;
+  justify-content: space-between;
+}
+
+.icon-holder {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500px;
+}
+
+.logout-btn {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  .logout-button {
+    padding: 0px 16px;
+    color: $white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  &:hover {
+    background-color: $black-shade-1;
+  }
+}
+
+.logout-icon {
+  margin: 5px 0px 0px 5px;
+}
+
+.logout-text {
+  font-weight: 500;
+  padding: 0 16px;
+}

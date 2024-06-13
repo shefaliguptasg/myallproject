@@ -1,0 +1,48 @@
+@import "../../../src/assets/styles/variable";
+@import "../../assets/styles/main.scss";
+
+.fame-entry-container {
+  padding: 20px 10px;
+  border-bottom: 1px solid $white-shade-2;
+}
+
+.user-img-fame-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 1rem;
+}
+
+.input-fame-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.user-image-holder {
+  .img-wrap {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.delete-icon {
+  color: $red;
+  cursor: pointer;
+}
+
+.remove-icon-userdata {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.input-holder {
+  padding: 20px 10px;
+}
+
+.divider {
+  border-bottom: 1px solid $white-shade-2;
+}

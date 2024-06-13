@@ -1,0 +1,31 @@
+@import "../../assets/styles/variable";
+@import "../../assets/styles/main.scss";
+
+.logoContainer {
+  position: relative;
+  top: 4rem;
+  display: flex;
+  justify-content: center;
+  img,
+  div {
+    margin-right: 1rem;
+  }
+}
+.logo_image {
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Main Contents Container */
+
+.main-content {
+  padding: 40px;
+  font-size: 16px;
+  color: $black;
+  font-style: normal;
+  font-weight: 500;
+  background-color: $white;
+  max-width: 800px;
+  max-height: auto;
+}

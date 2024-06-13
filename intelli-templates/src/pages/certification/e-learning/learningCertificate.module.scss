@@ -1,0 +1,175 @@
+// @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
+@import "../../../assets/styles/variable";
+
+.certification-learning {
+  position: relative;
+  width: inherit;
+  height: 85.8%;
+
+  .learning-container {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    display: inherit;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .img-holder {
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.certificate-learning-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .intelliswift-logo {
+    width: 180px;
+  }
+}
+
+.certificate-learning-main {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1.5rem;
+
+  .certificate-achivement {
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    #certification-text {
+      font-size: 2.925rem;
+      //   font-family: "Playfair Display", serif;
+      font-weight: 600;
+      line-height: 1;
+    }
+    #achivement-text {
+      font-size: 1.275rem;
+      line-height: 20px;
+      color: $mustard-shade-1;
+      font-weight: 600;
+    }
+    #certification-text-second {
+      font-size: 1.425rem;
+      font-weight: 600;
+      padding: 10px 0px;
+    }
+  }
+
+  .main-content {
+    position: relative;
+    margin-top: 1.825rem;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 550;
+
+    .certificate-person-name {
+      font-size: 2.685rem;
+      //   font-family: bold, "open-sans";
+      font-weight: 600;
+      color: $black;
+      line-height: 0.875;
+    }
+    .divider {
+      border-bottom: 1px solid $grey-shade-2;
+      width: 70%;
+      height: 1px;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 5px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 6px;
+        left: -2px;
+        top: -3px;
+        height: 6px;
+        border-radius: 50%;
+        border: 1px solid $black;
+        background-color: $black;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 6px;
+        right: -2px;
+        bottom: -3px;
+        height: 6px;
+        border-radius: 50%;
+        border: 1px solid $black;
+        background-color: $black;
+      }
+    }
+
+    // .certificate-person-name::after {
+    // }
+    .certificate-session-name {
+      font-size: 18px;
+      //   margin-top: 10px;
+      font-weight: 600;
+    }
+    .left-content-date {
+      font-size: 1rem;
+    }
+  }
+}
+
+.certificate-learning-footer {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding: 0px 10px;
+  margin-top: 1.5rem;
+  font-size: 20px;
+
+  .footer-left-content {
+    margin-top: 10px;
+    .congo-text {
+      text-transform: uppercase;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  }
+  .footer-right-content {
+    .right-content-sign {
+      position: relative;
+      img {
+        position: relative;
+        width: 80px;
+      }
+    }
+    .right-content-sign::after {
+      content: "";
+      border-bottom: 1px solid $black-shade-2;
+      width: 7em;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 5px;
+    }
+  }
+  .name-stamp {
+    font-size: 18px;
+    line-height: 1;
+    font-family: bold;
+    span {
+      font-weight: 400;
+    }
+  }
+}

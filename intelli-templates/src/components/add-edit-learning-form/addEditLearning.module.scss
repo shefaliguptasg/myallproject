@@ -1,0 +1,72 @@
+@import "../../assets/styles/variable";
+@import "../../assets/styles/main.scss";
+
+// ====================== start  of the Single User form styles =============
+.single-user-container {
+  padding: 10px 10px 5px;
+  border-bottom: 1px solid $white-shade-2;
+}
+
+.add-user-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 0px;
+}
+.user-img-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  .input-holder {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+.user-image-holder {
+  .img-wrap {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.remove-icon-userdata {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.icon-wrap {
+  width: 100%;
+}
+.user-slider-container {
+  border-top: 1px solid $white-shade-2;
+  border-bottom: 1px solid $white-shade-2;
+  margin-right: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .user-slider-title {
+    padding: 10px 0px 4px 12px;
+    font-size: 15px;
+  }
+  .user-slider-count {
+    padding: 0px 0px 4px 12px;
+    font-size: 12px;
+  }
+}
+
+.user-slider-container:hover {
+  background-color: $white;
+}
+
+.right-icon {
+  font-size: 25px;
+}
+
+.delete-icon {
+  color: $red;
+  cursor: pointer;
+}

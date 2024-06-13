@@ -1,0 +1,76 @@
+pipeline {
+    agent { label 'intelli' }
+    
+    environment {
+        // Define environment variables
+        NODEJS_HOME = tool name: 'nodejs', type: 'jenkins.plugins.nodejs.tools.NodeJSInstallation'
+        PATH = "$NODEJS_HOME/bin:${env.PATH}"
+        SONAR_SCANNER_HOME = '/home/jenkins/tools/sonar-scanner-4.6.2.2472-linux'
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                // Checkout the source code from your version control system
+                checkout scm
+            }
+        }
+
+        stage('Install Dependencies') {
+            steps {
+                // Install Node.js dependencies
+                sh 'npm install'
+            }
+        }
+        
+        stage('Run Tests') {
+            steps {
+                // Run your React project tests
+                sh 'npm test'
+            }
+        }
+
+        stage('SonarQube Analysis') {
+            steps {
+                // Run SonarQube analysis
+                withSonarQubeEnv('SonarScanner') {
+                    sh """
+                        ${SONAR_SCANNER_HOME}/bin/sonar-scanner \
+                        -Dsonar.projectKey=intelli-templates \
+                        -Dsonar.sources=src \
+                        -Dsonar.host.url=http://172.20.3.44:9000 \
+                        -Dsonar.token=sqa_f347831ab3b77d7be347e561aabd96d3a57f40a8
+                    """
+                }
+            }
+        }
+
+        stage('Build and Deploy') {
+            steps {
+                // Build and deploy your React project
+                sh 'CI=false npm run build'
+                // Add deployment steps if needed
+            }
+        }
+        stage('Docker Build') {
+                steps {
+                    script {
+                        sh '''
+                        cp -r /etc/nginx/nginx.conf /home/intelliswift/workspace/onboarding
+                        docker-compose down
+                        npm run docker:dev
+                        '''
+                    }
+                }
+            }
+    }
+
+    post {
+        success {
+            echo 'Build successful!'
+        }
+        failure {
+            echo 'Build failed!'
+        }
+    }
+}

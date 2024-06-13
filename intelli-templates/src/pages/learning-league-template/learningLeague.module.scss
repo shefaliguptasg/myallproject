@@ -1,0 +1,288 @@
+@import "../../assets/styles/variable";
+
+//HEADER CSS
+.header-container {
+  width: 50rem;
+  background-color: $black;
+  margin: auto;
+  height: 30rem;
+  position: relative;
+}
+
+.header-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1000;
+  top: 0px;
+  background-color: $black;
+  height: 6rem;
+  width: 70%;
+}
+
+.header-img {
+  width: 180px;
+}
+
+.header-bottom {
+  position: absolute;
+  width: 36rem;
+  bottom: 0px;
+  background-color: $black;
+  .header-title {
+    color: $red;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-family: semi-bold;
+  }
+}
+
+.backgroundImg-box {
+  height: 30rem;
+  width: 100%;
+  object-fit: fill;
+}
+.board-text {
+  color: $white-shade-2;
+  font-size: 38px;
+  text-align: center;
+}
+
+//MAIN CSS
+.wrapper-container {
+  background-color: $black;
+}
+.main-container {
+  color: $white-shade-2;
+  padding: 20px 80px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-text,
+.para-one,
+.para-two {
+  color: $white-shade-2;
+  padding: 10px 0px;
+}
+
+.orange-text {
+  color: $mustard-shade-1;
+}
+
+.table-struct {
+  padding: 2rem 8rem;
+  font-size: 16px;
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border: 1px solid $grey;
+    text-align: center;
+  }
+
+  th {
+    background-color: $red;
+    padding: 15px;
+    color: $white;
+  }
+
+  td {
+    padding: 15px 78px;
+    color: $white-shade-2;
+  }
+}
+
+.exp-text {
+  color: $white;
+  padding: 1rem 10rem;
+  text-align: center;
+}
+
+.three-para {
+  background-color: $emerald;
+  padding: 4px;
+  a {
+    color: $white;
+    font-weight: 600;
+  }
+}
+
+.card {
+  padding: 30px;
+  text-align: center;
+}
+
+.card-box {
+  width: calc(48% - 20px);
+  display: inline-block;
+  margin: 40px 15px;
+  padding: 12px;
+  background-color: $white;
+  position: relative;
+  min-height: 150px;
+  .img-box {
+    position: absolute;
+    top: -60px;
+    left: 35%;
+  }
+  strong {
+    position: relative;
+  }
+  .quote-left-holder {
+    position: absolute;
+    left: -2px;
+    top: 0px;
+    svg {
+      width: 4rem;
+      height: 3rem;
+      path {
+        // fill: #b5b5b5;
+      }
+    }
+  }
+  .quote-right-holder {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    svg {
+      width: 2rem;
+      height: 2rem;
+      path {
+        // fill: #cacaca;
+      }
+    }
+  }
+  .cardbox-content {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+}
+
+.card-text {
+  text-align: center;
+  padding: 25px;
+  color: $grey;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.Horizontal-bar {
+  height: 5.58px !important;
+}
+
+.horizontal-card-box {
+  width: calc(72% - 20px);
+  margin: auto;
+  background-color: $white;
+  padding: 25px 15px;
+  position: relative;
+  .quote-right-holder {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    svg {
+      width: 2rem;
+      height: 2rem;
+      path {
+        // fill: #cacaca;
+      }
+    }
+  }
+  .quote-left-holder {
+    position: absolute;
+    left: 14px;
+    top: 0px;
+    svg {
+      width: 4rem;
+      height: 3rem;
+      path {
+        // fill: #b5b5b5;
+      }
+    }
+  }
+}
+
+.profile-card-img {
+  width: 100px;
+  height: 100px;
+  bottom: 5px;
+  left: -65px;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 6px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-box-text {
+  padding: 15px 5px;
+  padding-left: 50px;
+  color: $grey;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.profile-name {
+  position: relative;
+  padding-left: 50px;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.res-text {
+  padding: 0px 179px;
+  h3 {
+    color: $white;
+    background-color: $red;
+    padding: 6px;
+    a {
+      color: $white-shade-2;
+    }
+  }
+}
+
+.text-wrapper {
+  text-align: center;
+  padding: 10px;
+  color: $white;
+}
+
+.congo-text {
+  padding-top: 28px;
+  color: $mustard;
+  font-size: 20px;
+}
+
+.learn-text {
+  padding: 22px;
+  font-size: 18px;
+  color: $white-shade-2;
+}
+
+.linking {
+  padding: 18px 63px;
+  color: $white-shade-2;
+  font-size: 16px;
+  a {
+    color: $blue-shade-1;
+  }
+}
+
+.regards {
+  padding: 30px 0px;
+  color: $white-shade-2;
+
+  h4 {
+    color: $white;
+  }
+}
